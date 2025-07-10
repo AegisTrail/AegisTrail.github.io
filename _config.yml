@@ -14,13 +14,12 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 0xdotgz's Blog # the main title
+title: AegisTrail's Blog # the main title
 
-tagline: CyberSecurity, Psychology and Philosophy # it will display as the subtitle
+tagline: "Web2 & Web3 : We Break Stuff So You Don’t Have To!" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
+  "AegisTrail - Web2 & Web3 : We Break Stuff So You Don’t Have To!""
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://AegisTrail.github.io"
