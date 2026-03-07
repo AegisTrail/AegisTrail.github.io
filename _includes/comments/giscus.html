@@ -1,24 +1,34 @@
 <style>
 .giscus-frame {
   margin-top: 15px;
-  background: linear-gradient(90deg, #0f1720, #0b1220);
+  background: #000;
   color: #eee;
   padding: 0px;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
   transform: translateY(10px);
   opacity: 0;
   animation: slideFadeIn 600ms cubic-bezier(.2,.9,.2,1) forwards 150ms;
 }
-.giscus-frame::before{content:"";position:absolute;inset:-2px;background:linear-gradient(120deg,rgba(58,123,213,0.15)0%,rgba(123,58,213,0.12)25%,rgba(58,213,123,0.10)50%,rgba(213,123,58,0.10)75%,rgba(58,123,213,0.15)100%);filter:blur(10px);z-index:0;animation:moveGradient 6s linear infinite;border-radius:10px;pointer-events:none;mix-blend-mode:screen;opacity:0.9}
-.giscus-frame::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.45);z-index:1;border-radius:6px;pointer-events:none}
+.giscus-frame::before{content:"";position:absolute;inset:-30%;background:
+radial-gradient(circle at 20% 20%, rgba(255,255,255,0.07) 0, transparent 32%),
+radial-gradient(circle at 80% 30%, rgba(255,255,255,0.05) 0, transparent 28%),
+radial-gradient(circle at 50% 80%, rgba(255,255,255,0.04) 0, transparent 30%);
+z-index:0;border-radius:8px;pointer-events:none;animation:giscusAurora 14s ease-in-out infinite}
+.giscus-frame::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.2);z-index:1;border-radius:6px;pointer-events:none}
 .giscus-frame .giscus{position:relative;z-index:2;padding:12px;transform:translateY(6px);opacity:0;animation:contentPop 500ms cubic-bezier(.2,.9,.2,1) forwards 350ms}
 .giscus-frame iframe,.giscus-frame .giscus,.giscus-frame .giscus *{background:transparent !important;color:#e6eef8 !important;border-color:rgba(255,255,255,0.06) !important}
-@keyframes moveGradient{0%{transform:translateX(-25%)}50%{transform:translateX(25%)}100%{transform:translateX(-25%)}}
 @keyframes slideFadeIn{to{transform:translateY(0);opacity:1}}
 @keyframes contentPop{to{transform:translateY(0);opacity:1}}
+@keyframes giscusAurora{
+  0%{transform:translate3d(-3%, -2%, 0) scale(1);opacity:.7}
+  33%{transform:translate3d(3%, 2%, 0) scale(1.08);opacity:1}
+  66%{transform:translate3d(-2%, 3%, 0) scale(1.04);opacity:.85}
+  100%{transform:translate3d(-3%, -2%, 0) scale(1);opacity:.7}
+}
 </style>
 
 <script src="https://giscus.app/client.js"
