@@ -41,7 +41,7 @@ social:
     - https://github.com/AegisTrail # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/naresh-j-apt/
+    # - https://www.linkedin.com/in/naresh-j-apt/
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
@@ -168,6 +168,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  tweets:
+    output: true
+    sort_by: date
 
 defaults:
   - scope:
@@ -184,6 +187,14 @@ defaults:
       path: _drafts
     values:
       comments: false
+  - scope:
+      path: ""
+      type: tweets
+    values:
+      layout: tweet
+      permalink: /tweets/:title/
+      comments: false
+      reactions: true
   - scope:
       path: ""
       type: tabs # see `site.collections`

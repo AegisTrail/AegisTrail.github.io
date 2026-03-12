@@ -23,9 +23,9 @@
   icon: 'fab fa-x-twitter'
   url: 'https://x.com/AegisTrail'
 
-- type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/naresh-j-apt/'                  # Fill with your Linkedin homepage
+# - type: linkedin
+#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://www.linkedin.com/in/naresh-j-apt/'                  # Fill with your Linkedin homepage
 
 
 - type: more

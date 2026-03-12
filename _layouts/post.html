@@ -177,8 +177,13 @@ script_includes:
     <!-- .post-tail-bottom -->
   </div>
 
-  <div class="giscus-frame" style="margin-top: 24px">
-    <div class="giscus"></div>
-  </div>
+  {% if page.comments != false %}
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Comments</h2>
+      <div class="giscus-frame" style="margin-top: 24px">
+        <div class="giscus"></div>
+      </div>
+    </section>
+  {% endif %}
   <!-- div.post-tail-wrapper -->
 </article>

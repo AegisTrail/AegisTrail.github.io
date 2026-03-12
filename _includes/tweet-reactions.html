@@ -31,6 +31,13 @@ z-index:0;border-radius:8px;pointer-events:none;animation:giscusAurora 14s ease-
 }
 </style>
 
+<section class="mt-5">
+  <h2 class="h4 mb-3">Reactions</h2>
+  <div class="giscus-frame" style="margin-top: 24px">
+    <div class="giscus"></div>
+  </div>
+</section>
+
 {% assign giscus_reactions_enabled = site.comments.giscus.reactions_enabled | default: 1 %}
 
 <script src="https://giscus.app/client.js"
