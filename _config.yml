@@ -152,6 +152,10 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+# Include dotfiles that Jekyll ignores by default (RFC 9116)
+include:
+  - .well-known
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
