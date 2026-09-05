@@ -72,8 +72,10 @@ analytics:
     id: # fill in your Fathom Site ID
 
 # Page views settings
+# Public view count display is disabled (hidden from posts),
+# but GoatCounter still counts privately via analytics.goatcounter.id above.
 pageviews:
-  provider: goatcounter # requires analytics.goatcounter.id
+  provider: # keep empty to hide public views count
 
 # Prefer color scheme setting.
 #
